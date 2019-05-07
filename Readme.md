@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Анна Образовская](https://up.htmlacademy.ru/htmlcss/25/user/376241).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
