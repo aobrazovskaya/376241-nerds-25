@@ -25,38 +25,145 @@
       <h1>Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
-        <p>Сетка:</p>
-        <ul>
-          <li>Адаптивная</li>
-          <li>Фиксированная</li>
-          <li>Резиновая</li>
-        </ul>
-        <p>ОСОБЕННОСТИ:</p>
-        <ul>
-          <li>Слайдеp</li>
-          <li>Блок преимуществ</li>
-          <li>Новости</li>
-          <li>Галерея</li>
-          <li>Корзина</li>
-        </ul>
-        <a href="#">ПОКАЗАТЬ</a>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legent>Сетка:</legent>
+              <ul>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="layouts" value="adaptive" checked>
+                  Адаптивная
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="layouts" value="fixed">
+                    Фиксированная
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="layouts" value="rubber">
+                  Резиновая
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legent>Особенности:</legent>
+              <ul>
+                <li class="filter-option">
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+                    Слайдеp
+                  <label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefits block">
+                  Блок преимуществ
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+                  Новости
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+                  Галерея
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">
+                  Корзина
+                </li>
+              </ul>
+            </fieldset>
+              <button type="submit" class="filter-button button">Показать</button>
+        </form>
       </section>
       <h2 class="visually-hidden">Шаблоны</h2>
-      <ul class="cataloge-list">
-        <li class="catalog-item">
-          <img src="img/img-sedona-jpg.png" width="360" height="576" alt="Шаблон Седона">
-          <div class="price-item">
-            <h3>Sedona</h3>
-            <p>Информационный сайт для туристов</p>
-            <a href="#">9 900 руб.</a>
-          </div>
-        </li>
-        <li class="catalog-item"><img src="img/img-pink-jpg.png" width="360" height="576" alt="Шаблон Pink"></li>
-        <li class="catalog-item"><img src="img/img-barbershop-jpg.png" width="360" height="576" alt="Шаблон Borodinski"></li>
-        <li class="catalog-item"><img src="img/img-mishka-jpg.png" width="360" height="576" alt="Шаблон Mishka"></li>
-        <li class="catalog-item"><img src="img/img-aplus-jpg.png" width="360" height="576" alt="Шаблон Учеба"></li>
-        <li class="catalog-item"><img src="img/img-kvast-jpg.png" width="360" height="576" alt="Шаблон Кваст"></li>
-      </ul>
+      <section>
+        <ul class="cataloge-list">
+          <li class="catalog-item">
+            <a href="sedona-pattern.html">
+              <img src="img/img-sedona-jpg.png" width="360" height="576" alt="Шаблон Седона">
+            </a>
+              <div class="price-item">
+                <h3>Sedona</h3>
+                <p>Информационный сайт для туристов</p>
+                <a href="sedona-pattern.html">9 900 руб.</a>
+              </div>
+          </li>
+          <li class="catalog-item">
+            <a href="pink-pattern.html">
+              <img src="img/img-pink-jpg.png" width="360" height="576" alt="Шаблон Pink">
+            </a>
+            <div class="price-item">
+              <h3>Pink App</h3>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a href="pink-pattern.html">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="barbershop-pattern.html">
+              <img src="img/img-barbershop-jpg.png" width="360" height="576" alt="Шаблон Borodinski">
+            </a>
+            <div class="price-item">
+              <h3>Barbershop</h3>
+              <p>Сайт салона красоты. Для мужчин, да.</p>
+              <a href="barbershop-pattern.html">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="mishka-pattern.html">
+              <img src="img/img-mishka-jpg.png" width="360" height="576" alt="Шаблон Mishka">
+            </a>
+            <div class="price-item">
+              <h3>MISHKA</h3>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a href="mishka-pattern.html">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="aplus-pattern.html">
+              <img src="img/img-aplus-jpg.png" width="360" height="576" alt="Шаблон Aplus">
+            </a>
+            <div class="price-item">
+              <h3>A Plus</h3>
+              <p>Лендинг курсов повышения квалификациик</p>
+              <a href="aplus-pattern.html">9 900 руб.</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <a href="kvast-pattern.html">
+              <img src="img/img-kvast-jpg.png" width="360" height="576" alt="Шаблон Кваст">
+            </a>
+            <div class="price-item">
+              <h3>КВАСТ</h3>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a href="kvast-pattern.html">9 900 руб.</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="page-list">
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a href="#">Следующая</a>
+          </li>
+        </ul>
+      </section>
+      <section class="company-address-list">
+        <p class="company-name">NЁRDS DESIGN STUDIO</p>
+        <p class="company-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="company-address">тел. +7 (812) 275-75-75</p>
+        <a class="contact-us" href="contacts.html">Напишите нам</a>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="socials-list">
