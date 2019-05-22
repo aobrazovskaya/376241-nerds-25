@@ -78,7 +78,7 @@
         <p class="company-name">NЁRDS DESIGN STUDIO</p>
         <p class="company-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="company-address">тел. +7 (812) 275-75-75</p>
-        <a class="contact-us" href="contacts.html">Напишите нам</a>
+        <a class="contact-us" href="#modal-contact">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
@@ -90,5 +90,23 @@
       <p><b>Давайте дружить, это выгодно!</b></p>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
+    <section class="modal modal-contact" id="modal-contact">
+      <h2>Напишите нам</h2>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact-item">
+          <label for="contact-username">Ваше имя:</label>
+          <input id="contact-username" type="text" name="username" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-item">
+          <label for="contact-email">Ваш e-mail:</label>
+          <input id="contact-email" type="email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="contact-item">
+          <label for="contact-text">Текст письма:</label>
+          <input id="contact-text" type="text" name="text" value="" placeholder="В свободной форме">
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
