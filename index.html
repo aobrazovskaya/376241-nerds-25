@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <header class="main-header">
@@ -26,16 +29,19 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <article class="services-service service-site">
+          <img src="img/advantage-picture-red.png" width="300" height="146" alt="Веб-сайты">
           <h3>Веб-сайты</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="btn btn-red" href="#">ЗАКАЗАТЬ</a>
         </article>
         <article class="services-service service-apps">
+          <img src="img/advantage-picture-green.png" width="300" height="146" alt="Приложения">
           <h3>Приложения</h3>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn btn-green" href="#">ЗАКАЗАТЬ</a>
         </article>
         <article class="services-service service-presentations">
+          <img src="img/advantage-picture-yellow.png" width="300" height="146" alt="Презентации">
           <h3>Презентации</h3>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn btn-yellow" href="#">ЗАКАЗАТЬ</a>
@@ -52,9 +58,10 @@
         </ul>
       </section>
       <section class="features">
+        <img src="img/nerds-picture.png" width="360" height="208" alt="Логотип Нёрдс">
         <table class="features-list">
           <tr class="features-title">
-            <th>с 2004 года любим точность во всем:</th>
+            <th colspan="3">с 2004 года любим точность во всем:</th>
           </tr>
           <tr class="features-item">
             <td>146<span>%</span></td>
@@ -78,7 +85,7 @@
         <p class="company-name">NЁRDS DESIGN STUDIO</p>
         <p class="company-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="company-address">тел. +7 (812) 275-75-75</p>
-        <a class="contact-us" href="#modal-contact">Напишите нам</a>
+        <a class="btn contact-us" href="#modal-contact">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">
@@ -105,7 +112,7 @@
           <label for="contact-text">Текст письма:</label>
           <input id="contact-text" type="text" name="text" value="" placeholder="В свободной форме">
         </p>
-        <button class="button" type="submit">Отправить</button>
+        <button class="btn" type="submit">Отправить</button>
       </form>
     </section>
   </body>

@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 <body>
       <header class="main-header">
@@ -20,9 +23,9 @@
             <li><a href="basket.html">Корзина</a></li>
           </ul>
         </nav>
+        <h1>Магазин готовых шаблонов</h1>
       </header>
     <main>
-      <h1>Магазин готовых шаблонов</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
@@ -30,7 +33,7 @@
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
-                  <label>
+                  <label class="filter-option-radio">
                     <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="layouts" value="adaptive" checked>
                   Адаптивная
                   </label>
@@ -59,24 +62,32 @@
                   </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefits block">
-                  Блок преимуществ
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefits block" disabled>
+                    Блок преимуществ
+                  </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
-                  Новости
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+                    Новости
+                  </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
-                  Галерея
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+                    Галерея
+                  </label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">
-                  Корзина
+                  <label>
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">
+                    Корзина
+                  </label>
                 </li>
               </ul>
             </fieldset>
-              <button type="submit" class="filter-button button">Показать</button>
+              <button type="submit" class="filter-button btn">Показать</button>
         </form>
       </section>
       <h2 class="visually-hidden">Шаблоны</h2>
@@ -89,7 +100,7 @@
               <div class="price-item">
                 <h3>Sedona</h3>
                 <p>Информационный сайт для туристов</p>
-                <a href="sedona-pattern.html">9 900 руб.</a>
+                <a href="sedona-pattern.html" class="btn btn-price">9 900 руб.</a>
               </div>
           </li>
           <li class="catalog-item">
@@ -99,7 +110,7 @@
             <div class="price-item">
               <h3>Pink App</h3>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="pink-pattern.html">9 900 руб.</a>
+              <a href="pink-pattern.html" class="btn btn-price">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -109,7 +120,7 @@
             <div class="price-item">
               <h3>Barbershop</h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a href="barbershop-pattern.html">9 900 руб.</a>
+              <a href="barbershop-pattern.html" class="btn btn-price">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -119,7 +130,7 @@
             <div class="price-item">
               <h3>MISHKA</h3>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a href="mishka-pattern.html">9 900 руб.</a>
+              <a href="mishka-pattern.html" class="btn btn-price">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -129,7 +140,7 @@
             <div class="price-item">
               <h3>A Plus</h3>
               <p>Лендинг курсов повышения квалификациик</p>
-              <a href="aplus-pattern.html">9 900 руб.</a>
+              <a href="aplus-pattern.html" class="btn btn-price">9 900 руб.</a>
             </div>
           </li>
           <li class="catalog-item">
@@ -139,22 +150,22 @@
             <div class="price-item">
               <h3>КВАСТ</h3>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a href="kvast-pattern.html">9 900 руб.</a>
+              <a href="kvast-pattern.html" class="btn btn-price">9 900 руб.</a>
             </div>
           </li>
         </ul>
         <ul class="page-list">
           <li>
-            <a href="#">1</a>
+            <a href="#" class="btn filter-button page-btn-active">1</a>
           </li>
           <li>
-            <a href="#">2</a>
+            <a href="#" class="btn filter-button">2</a>
           </li>
           <li>
-            <a href="#">3</a>
+            <a href="#" class="btn filter-button">3</a>
           </li>
           <li class="page-item">
-            <a href="#">Следующая</a>
+            <a href="#" class="btn filter-button">Следующая</a>
           </li>
         </ul>
       </section>
@@ -162,7 +173,7 @@
         <p class="company-name">NЁRDS DESIGN STUDIO</p>
         <p class="company-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p class="company-address">тел. +7 (812) 275-75-75</p>
-        <a class="contact-us" href="index.html#modal-contact">Напишите нам</a>
+        <a class="btn contact-us" href="index.html#modal-contact">Напишите нам</a>
       </section>
     </main>
     <footer class="main-footer">

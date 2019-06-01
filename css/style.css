@@ -1,0 +1,376 @@
+body {
+  margin: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header,
+.main-navigation {
+  line-height: 30px;
+  font-weight: 500;
+
+  background-color: #eeeeee;
+}
+
+.main-header-logo img:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo img:focus {
+  opacity: 0.3;
+}
+
+.site-navigation,
+.basket-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.basket-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.basket-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.basket-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.basket-navigation {
+  background-image: url("../img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: center left;
+}
+
+.basket-navigation a {
+  text-align: right;
+}
+
+.services-service p{
+  color: #283136;
+  text-transform: none;
+}
+
+.services-service h3{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.services-service a{
+  color: #ffffff;
+  line-height: 18px;
+  font-weight: 500;
+
+  text-decoration: none;
+}
+
+.btn {
+  font: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #eeeeee;
+  border: none;
+}
+
+.btn:focus{
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.service-site img{
+  background-color: #fb565a;
+}
+
+.btn-red {
+  background-color: #fb565a;
+}
+
+.btn-red:hover {
+  background-color: #e74246;
+}
+
+.btn-red:focus {
+  background-color: #d7373b;
+}
+
+.service-apps img{
+  background-color: #00ca74;
+}
+
+.btn-green {
+  background-color: #00ca74;
+}
+
+.btn-green:hover {
+  background-color: #00bc6c;
+}
+
+.btn-green:focus {
+  background-color: #00aa62;
+}
+
+.service-presentations img{
+  background-color: #efc84a;
+}
+
+.btn-yellow {
+  background-color: #efc84a;
+}
+
+.btn-yellow:hover {
+  background-color: #eab534;
+}
+
+.btn-yellow:focus {
+  background-color: #e5a722;
+}
+
+.company-description b {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.company-description p {
+  color: #283136;
+  text-transform: none;
+}
+
+.company-description h4 {
+  font-weight: bold;
+}
+
+.services-item {
+  text-transform: none;
+  list-style: none;
+  color: #283136;
+}
+
+.features-item td{
+  font-size: 45px;
+  line-height: 10px;
+  font-weight: bold;
+}
+
+.features-item span{
+  font-size: 18px;
+  font-weight: inherit;
+  vertical-align: super;
+}
+
+.features-info {
+  line-height: 18px;
+  color: #283136;
+  text-transform: none;
+}
+
+.clients-list img{
+  opacity: 0.2;
+}
+
+.clients-list img:hover{
+  opacity: 1;
+}
+
+.clients-list img:focus{
+  opacity: 0.1;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.filter-option {
+  line-height: 20px;
+  color: #283136;
+  text-transform: none;
+}
+
+.filter-input-checkbox:disabled {
+  opacity: 0.3;
+}
+
+
+.company-address-list .contact-us {
+  background-color: #fb565a;
+}
+
+.filter-button {
+  color: #000000;
+}
+
+.filter-button:hover {
+  background-color: #dfdfdf;
+}
+
+.filter-button:focus {
+  color: rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+}
+
+.cataloge-list {
+  list-style: none;
+}
+
+.price-item {
+  background-color: #eeeeee;
+}
+
+.price-item h3{
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.price-item p {
+  color: #666666;
+  text-transform: none;
+  text-align: center;
+}
+
+.page-list {
+  list-style: none;
+}
+
+.page-btn-active {
+  background-color: #ffffff;
+  border: solid 3px #dbdbdb;
+}
+
+.btn-price {
+  background-color: #fb565a;
+}
+
+.btn-price:hover {
+  background-color: #e74246;
+}
+
+.btn-price:focus {
+  background-color: #d7373b;
+}
+
+.catalog-item::before {
+  content: '';
+  display: block;
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/browser.svg");
+  opacity: 0.12;
+}
+
+.catalog-item:hover::before {
+  opacity: 1;
+}
+
+.company-name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.company-address {
+  line-height: 18px;
+  color: #666666;
+  text-transform: none;
+}
+
+.contact-us:hover {
+  background-color: #e74246;
+}
+
+.contact-us:focus {
+  background-color: #d7373b;
+}
+
+.main-footer p {
+  line-height: 22px;
+  color: #444444;
+}
+
+.main-footer b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.modal h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  text-transform: none;
+}
+
+.contact-item label{
+  text-transform: none;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.contact-item input {
+  font: inherit;
+
+  background-color: transparent;
+  border: 2px solid #d7dcde;
+}
+
+.contact-item input:hover{
+  border: 2px solid #b4b9bb;
+}
+
+.contact-item input:focus{
+  color: #444444;
+  border: 2px solid #000000;
+}
+
+.contact-item input:invalid{
+  color: #e74246;
+  border: 2px solid #e74246;
+  outline: none;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="password"] {
+  color: rgba(68, 68, 68, 0.5);
+  line-height: 18px;
+  background-color: #ffffff;
+}
+
+.modal button {
+  background-color: #fb565a;
+  outline: none;
+}
