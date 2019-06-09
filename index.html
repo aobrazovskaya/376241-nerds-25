@@ -9,22 +9,24 @@
   </head>
   <body>
       <header class="main-header">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
-        </a>
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li><a class="site-navigation-link" href="info.html">Студия</a></li>
-            <li><a class="site-navigation-link" href="clients.html">Клиенты</a></li>
-            <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-            <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
-          </ul>
-          <ul class="basket-navigation">
-            <li><a href="basket.html">Корзина</a></li>
-          </ul>
-        </nav>
+        <div class="main-navigation-wrapper container">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+          </a>
+          <nav class="main-navigation">
+            <ul class="site-navigation">
+              <li class="site-navigation-item"><a class="site-navigation-link" href="info.html">Студия</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link" href="clients.html">Клиенты</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+              <li class="site-navigation-item"><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+            </ul>
+            <ul class="basket-navigation">
+              <li class="basket-navigation-item"><a href="basket.html">Корзина</a></li>
+            </ul>
+          </nav>
+        </div>
       </header>
-    <main class="container">
+    <main class="main-container">
       <h1 class="visually-hidden">Нёрдс</h1>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
@@ -47,34 +49,36 @@
           <a class="btn btn-yellow" href="#">ЗАКАЗАТЬ</a>
         </article>
       </section>
-      <section class="company-description">
-        <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b></p>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h4>Выполняем заказы на разработку:</h4>
-        <ul class="services-list">
-          <li class="services-item">Веб-сайтов любой сложности</li>
-          <li class="services-item">Мобильных приложений для iOS и Android</li>
-          <li class="services-item">Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-      </section>
-      <section class="features">
-        <img src="img/nerds-picture.png" width="360" height="208" alt="Логотип Нёрдс">
-        <table class="features-list">
-          <tr class="features-title">
-            <th colspan="3">с 2004 года любим точность во всем:</th>
-          </tr>
-          <tr class="features-item">
-            <td>146<span>%</span></td>
-            <td>100<span>%</span></td>
-            <td>50<span>%</span></td>
-          </tr>
-          <tr class="features-info">
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
-          </tr>
-        </table>
-      </section>
+      <div class="company-description-wrapper">
+        <section class="company-description">
+          <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b></p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h4>Выполняем заказы на разработку:</h4>
+          <ul class="services-list">
+            <li class="services-item">Веб-сайтов любой сложности</li>
+            <li class="services-item">Мобильных приложений для iOS и Android</li>
+            <li class="services-item">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </section>
+        <section class="features">
+          <img src="img/nerds-picture.png" width="360" height="208" alt="Логотип Нёрдс">
+          <table class="features-list">
+            <tr class="features-title">
+              <th colspan="3">с 2004 года любим точность во всем:</th>
+            </tr>
+            <tr class="features-item">
+              <td>146<span>%</span></td>
+              <td>100<span>%</span></td>
+              <td>50<span>%</span></td>
+            </tr>
+            <tr class="features-info">
+              <td>Уровень самоотдачи</td>
+              <td>Соблюдение сроков</td>
+              <td>Минимальная предоплата</td>
+            </tr>
+          </table>
+        </section>
+      </div>
       <section class="clients-list">
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy-logo.png" width="199" height="68" alt="html academy"></a>
         <a href="#"><img src="img/borodinski-logo.png" width="209" height="90" alt="Borodinski"></a>
