@@ -8,25 +8,28 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 <body>
-      <header class="main-header">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
-        </a>
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li><a class="site-navigation-link" href="info.html">Студия</a></li>
-            <li><a class="site-navigation-link" href="clients.html">Клиенты</a></li>
-            <li class="site-navigation-current"><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-            <li><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
-          </ul>
-          <ul class="basket-navigation">
-            <li><a href="basket.html">Корзина</a></li>
-          </ul>
-        </nav>
+  <header class="main-header inner-page-header">
+          <div class="main-navigation-wrapper container">
+            <a class="main-header-logo" href="index.html">
+              <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
+            </a>
+            <nav class="main-navigation">
+              <ul class="site-navigation">
+                <li class="site-navigation-item"><a class="site-navigation-link" href="info.html">Студия</a></li>
+                <li class="site-navigation-item"><a class="site-navigation-link" href="clients.html">Клиенты</a></li>
+                <li class="site-navigation-current site-navigation-item"><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+                <li class="site-navigation-item"><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+              </ul>
+              <ul class="basket-navigation">
+                <li class="basket-navigation-item"><a href="basket.html">Корзина</a></li>
+              </ul>
+            </nav>
+          </div>
         <h1>Магазин готовых шаблонов</h1>
-      </header>
-    <main>
-      <section class="filters">
+    </header>
+    <main class="main-container">
+      <div class="examples-wrapper">
+        <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
@@ -92,7 +95,7 @@
       </section>
       <h2 class="visually-hidden">Шаблоны</h2>
       <section>
-        <ul class="cataloge-list">
+        <ul class="catalog-list">
           <li class="catalog-item">
             <a href="sedona-pattern.html">
               <img src="img/img-sedona-jpg.png" width="360" height="576" alt="Шаблон Седона">
@@ -169,12 +172,15 @@
           </li>
         </ul>
       </section>
-      <section class="company-address-list">
-        <p class="company-name">NЁRDS DESIGN STUDIO</p>
-        <p class="company-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p class="company-address">тел. +7 (812) 275-75-75</p>
-        <a class="btn contact-us" href="index.html#modal-contact">Напишите нам</a>
-      </section>
+    </div>
+      <div class="company-address-wrapper address-wrapper-inner">
+        <section class="company-address-list">
+          <p class="company-name">NЁRDS DESIGN STUDIO</p>
+          <p class="company-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p class="company-tel">тел. +7 (812) 275-75-75</p>
+          <a class="btn contact-us" href="#modal-contact">Напишите нам</a>
+        </section>
+      </div>
     </main>
     <footer class="main-footer">
       <div class="socials-list">
@@ -182,8 +188,28 @@
         <a class="social-button button-fb" href="#">Facebook</a>
         <a class="social-button button-Instagram" href="#">Instagram</a>
       </div>
-      <p><b>Давайте дружить, это выгодно!</b></p>
-      <p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="main-footer-item">
+        <p><b>Давайте дружить, это выгодно!</b></p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </footer>
+    <section class="modal modal-contact" id="modal-contact">
+      <h2>Напишите нам</h2>
+      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="contact-item">
+          <label for="contact-username">Ваше имя:</label>
+          <input id="contact-username" type="text" name="username" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-item">
+          <label for="contact-email">Ваш e-mail:</label>
+          <input id="contact-email" type="email" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="contact-item">
+          <label for="contact-text">Текст письма:</label>
+          <input id="contact-text" type="text" name="text" value="" placeholder="В свободной форме">
+        </p>
+        <button class="btn" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>
