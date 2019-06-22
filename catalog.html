@@ -9,7 +9,8 @@
   </head>
 <body>
   <header class="main-header inner-page-header">
-          <div class="main-navigation-wrapper container">
+      <div class="container">
+          <div class="main-navigation-wrapper">
             <a class="main-header-logo" href="index.html">
               <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нёрдс">
             </a>
@@ -17,7 +18,7 @@
               <ul class="site-navigation">
                 <li class="site-navigation-item"><a class="site-navigation-link" href="info.html">Студия</a></li>
                 <li class="site-navigation-item"><a class="site-navigation-link" href="clients.html">Клиенты</a></li>
-                <li class="site-navigation-current site-navigation-item"><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+                <li class="site-navigation-item site-navigation-current"><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
                 <li class="site-navigation-item"><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
               </ul>
               <ul class="basket-navigation">
@@ -26,32 +27,43 @@
             </nav>
           </div>
         <h1>Магазин готовых шаблонов</h1>
+      </div>
     </header>
-    <main class="main-container">
+    <main class="container">
       <div class="examples-wrapper">
         <section class="filters">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                  <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
+                </div>
+              </div>
+            </fieldset>
             <fieldset>
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option">
-                  <label class="filter-option-radio">
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="layouts" value="adaptive" checked>
-                  Адаптивная
-                  </label>
+                  <input id="filter-adaptive-input" checked class="visually-hidden filter-input filter-input-radio" type="radio" name="layouts" value="adaptive">
+                  <label for="filter-adaptive-input" class="filter-option-radio">Адаптивная</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="layouts" value="fixed">
-                    Фиксированная
-                  </label>
+                  <input id="filter-fixed-input" class="visually-hidden filter-input filter-input-radio" type="radio" name="layouts" value="fixed">
+                  <label for="filter-fixed-input">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="layouts" value="rubber">
-                  Резиновая
-                  </label>
+                  <input id="filter-rubber-input" class="visually-hidden filter-input filter-input-radio" type="radio" name="layouts" value="rubber">
+                  <label for="filter-rubber-input">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -59,38 +71,28 @@
               <legend>Особенности:</legend>
               <ul>
                 <li class="filter-option">
-                  <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
-                    Слайдеp
-                  </label>
+                  <input id="filter-slyder-input" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+                  <label for="filter-slyder-input">Слайдеp</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefits block" disabled>
-                    Блок преимуществ
-                  </label>
+                  <input id="filter-benefits-block-input" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="benefits block" disabled>
+                  <label for="filter-benefits-block-input">Блок преимуществ</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
-                    Новости
-                  </label>
+                  <input id="filter-news-input" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" checked>
+                  <label for="filter-news-input">Новости</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
-                    Галерея
-                  </label>
+                  <input id="filter-gallary-input" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+                  <label for="filter-gallary-input">Галерея</label>
                 </li>
                 <li class="filter-option">
-                  <label>
-                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">
-                    Корзина
-                  </label>
+                  <input id="filter-basket-input" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket">
+                  <label for="filter-basket-input">Корзина</label>
                 </li>
               </ul>
             </fieldset>
-              <button type="submit" class="filter-button btn">Показать</button>
+            <button type="submit" class="filter-button btn">Показать</button>
         </form>
       </section>
       <h2 class="visually-hidden">Шаблоны</h2>
@@ -167,7 +169,7 @@
           <li>
             <a href="#" class="btn filter-button">3</a>
           </li>
-          <li class="page-item">
+          <li class="page-next">
             <a href="#" class="btn filter-button">Следующая</a>
           </li>
         </ul>
@@ -182,11 +184,17 @@
         </section>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="socials-list">
-        <a class="social-button button-vk" href="#">Вконтакте</a>
-        <a class="social-button button-fb" href="#">Facebook</a>
-        <a class="social-button button-Instagram" href="#">Instagram</a>
+        <a class="social-button button-vk" href="#">
+          <img src="img/vk-icon.svg" alt="Вконтакте" width="26px" height="15px">
+        </a>
+        <a class="social-button button-fb" href="#">
+          <img src="img/fb-icon.svg" alt="Facebook" width="12px" height="22px">
+        </a>
+        <a class="social-button button-Instagram" href="#">
+          <img src="img/insta-icon.svg" alt="Instagram" width="21px" height="21px">
+        </a>
       </div>
       <div class="main-footer-item">
         <p><b>Давайте дружить, это выгодно!</b></p>
