@@ -26,8 +26,6 @@ a {
 }
 
 .examples-wrapper {
-  margin-top: 60px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -51,8 +49,7 @@ a {
 .main-navigation {
   width: 100%;
   margin-left: 202px;
-  margin-top: 34px;
-  margin-bottom: 18px;
+  margin-top: 26px;
 
   display: flex;
 }
@@ -79,7 +76,7 @@ a {
 }
 
 .main-navigation-wrapper {
-  height: 132px;
+  height: 115px;
   padding-top: 49px;
 
   display: flex;
@@ -112,7 +109,7 @@ a {
 }
 
 .basket-navigation {
-  width: 116px;
+  width: 115px;
   margin-left: auto;
 }
 
@@ -236,12 +233,11 @@ a {
 }
 
 .slider-item {
+  display: none;
   min-height: 430px;
 
-  display: none;
-
   background-repeat: no-repeat;
-  background-position: center right;
+  background-position: bottom right;
 }
 
 .slider-item:nth-child(1) {
@@ -251,7 +247,7 @@ a {
 .slider-item h3 {
   max-width: 600px;
   margin: 0;
-  padding-top: 58px;
+  padding-top: 76px;
   margin-bottom: 27px;
 
   font-size: 55px;
@@ -263,7 +259,7 @@ a {
 .slider-item p {
   max-width: 430px;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 
   font-weight: 400;
   line-height: 24px;
@@ -283,7 +279,6 @@ a {
 
 .slider-item-first {
   margin-right: 30px;
-
   background-image: url("../img/slide-picture.png");
 }
 
@@ -324,6 +319,7 @@ a {
 
 .services-service p {
   margin: 0;
+  width: 280px;
 
   color: #283136;
   text-transform: none;
@@ -421,7 +417,7 @@ a {
 }
 
 .company-description-wrapper {
-  margin-bottom: 46px;
+  margin-bottom: 50px;
   padding-top: 40px;
 
   display: flex;
@@ -448,7 +444,7 @@ a {
 }
 
 .description-item:last-of-type {
-  padding: 35px 0 40px;
+  padding: 35px 0 38px;
 }
 
 .company-description h4 {
@@ -489,7 +485,7 @@ a {
 }
 
 .features img {
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   display: block;
 }
 
@@ -516,7 +512,7 @@ a {
 }
 
 .clients-list {
-  height: 180px;
+  height: 185px;
 
   display: flex;
   justify-content: space-between;
@@ -526,7 +522,7 @@ a {
 }
 
 .clients-list a {
-  width: 298px;
+  width: 258px;
   height: 100%;
   opacity: 0.2;
   display: flex;
@@ -546,7 +542,7 @@ a {
   opacity: 0.1;
 }
 
-.clint-delimitr {
+.client-delimitr {
   margin: 0 auto;
   width: 0;
   height: 52px;
@@ -556,6 +552,7 @@ a {
 .filters {
   width: 260px;
   min-height: 772px;
+  margin-top: 60px;
 }
 
 .filters ul {
@@ -655,6 +652,10 @@ a {
 }
 
 .company-address-list {
+  position: absolute;
+  top: 54px;
+  left: 140px;
+
   width: 319px;
   min-height: 308px;
   padding-left: 50px;
@@ -666,6 +667,8 @@ a {
 
   display: flex;
   flex-direction: column;
+
+  background-color: #ffffff;
 }
 
 .company-address-list .contact-us {
@@ -798,8 +801,63 @@ a {
   left: 160px;
 }
 
+
+.sort-wrapper {
+  display: flex;
+
+  width: 760px;
+  margin-top: 60px;
+
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.sort-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.sort-wrapper span {
+  margin-right: 267px;
+}
+
+.sort-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sort-list:last-child {
+  margin-left: auto;
+}
+
+.sort-list li {
+  opacity: 0.3;
+}
+
+.sort-type {
+  margin-right: 26px;
+}
+
+.sort-type a {
+  color: #000000;
+}
+
+li.active-sort {
+  opacity: 1;
+}
+
+.sort-down {
+  margin-right: 18px;
+  transform: rotate(180deg);
+}
+
 .catalog-list {
-  margin-top: 0;
+  margin-top: 60px;
   margin-bottom: 0;
   padding: 0;
   width: 760px;
@@ -930,8 +988,8 @@ a {
 }
 
 .company-address {
-  padding-bottom: 17px;
-  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-top: 24px;
 
   line-height: 18px;
   color: #666666;
@@ -939,7 +997,7 @@ a {
 }
 
 .company-tel {
-  padding-bottom: 38px;
+  padding-bottom: 35px;
 
   line-height: 18px;
   color: #666666;
@@ -947,9 +1005,19 @@ a {
 }
 
 .company-address-wrapper {
+  position: relative;
   min-height: 416px;
+  margin-top: 78px;
 
   display: flex;
+}
+
+.company-address-wrapper iframe {
+  border: none;
+}
+
+.address-wrapper-inner {
+  margin-top: 60px;
 }
 
 .contact-us:hover {
@@ -983,6 +1051,7 @@ a {
 
 .main-footer-item p {
   padding-bottom: 12px;
+  text-transform: none;
 }
 
 .main-footer-item p:last-child {
@@ -1036,6 +1105,13 @@ a {
   opacity: 0.3;
 }
 
+.modal {
+  position: fixed;
+
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
 .modal h2 {
   margin: 0;
   padding-bottom: 45px;
@@ -1047,10 +1123,53 @@ a {
 }
 
 .modal-contact {
+  display: none;
+  top: 50%;
+  left: 50%;
+
   width: 960px;
   min-height: 590px;
 
+  margin-left: -480px;
   padding: 70px 100px 84px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  right: -3px;
+
+  width: 27px;
+  height: 3px;
+
+  background-color: #fb565a;
+  opacity: 0.6;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
 }
 
 .contact-item label {
@@ -1088,15 +1207,10 @@ a {
   background-color: #ffffff;
 }
 
-.modal button {
-  background-color: #fb565a;
-  outline: none;
-}
-
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
-  margin: -1;
+  margin: -1px;
 }
