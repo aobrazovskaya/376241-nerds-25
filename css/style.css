@@ -818,7 +818,7 @@ a {
 }
 
 .sort-wrapper span {
-  margin-right: 267px;
+  margin-right: 266px;
 }
 
 .sort-list {
@@ -850,8 +850,8 @@ li.active-sort {
   opacity: 1;
 }
 
-.sort-down {
-  margin-right: 18px;
+.sort-down svg {
+  margin-right: 19px;
   transform: rotate(180deg);
 }
 
@@ -871,7 +871,7 @@ li.active-sort {
 .price-item {
   position: absolute;
   bottom: 0;
-
+  width: 360px;
   display: none;
 
   min-height: 231px;
@@ -899,6 +899,8 @@ li.active-sort {
   color: #666666;
   text-transform: none;
   text-align: center;
+
+  overflow: hidden;
 }
 
 .page-list {
